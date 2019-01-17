@@ -34,7 +34,6 @@ def safe_region(step_filepath):
 		content = f.readlines()
 	content=[x.strip() for x in content]
 	content_array = list([x.split(', ') for x in content])
-	#content_array=[(1,1),(1,6),(8,3),(3,4),(5,5),(8,9)]
 	content_array=[(int(a[0]),int(a[1])) for a in content_array]
 	x = [a[0] for a in content_array]
 	y = [a[1] for a in content_array]
